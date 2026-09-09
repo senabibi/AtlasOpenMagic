@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #17202a;
+}
+
+.app {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.badge {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 46px;
+  margin: 12px 0;
+}
+
+header p {
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c92f3b;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.success {
+  border-top: 5px solid #2da44e;
+}
+
+.error {
+  border-top: 5px solid #e63946;
+}
+
+pre {
+  background: #101828;
+  color: #d1fae5;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}

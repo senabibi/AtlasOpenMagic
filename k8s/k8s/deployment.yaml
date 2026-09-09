@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atlas-repro-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: atlas-repro-backend
+  template:
+    metadata:
+      labels:
+        app: atlas-repro-backend
+    spec:
+      containers:
+        - name: backend
+          image: atlas-repro-backend:latest
+          ports:
+            - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: atlas-repro-backend-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8000
+      targetPort: 8000
+  selector:
+    app: atlas-repro-backend
