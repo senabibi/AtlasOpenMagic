@@ -353,15 +353,4 @@ Before using it in a production environment, consider adding:
 -   Secure secret and configuration management.
 -   Dataset and software provenance validation.
 
-## License
 
-Add the license applicable to this repository.
-
-For example:
-
-``` text
-MIT License
-```
-
-Replace this section with the actual license and copyright information
-used by the project.
